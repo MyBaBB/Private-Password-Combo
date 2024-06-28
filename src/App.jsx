@@ -110,14 +110,14 @@ function App() {
               </div>
             </div>
           </Card>
-          <a href="https://mybabb.com">
+        
             <span className="text-sm text-slate-500">
               Presented by{" "}
               <span className="font-medium text-orange-500 no-underline hover:underline">
                 Brett Baker
               </span>
             </span>
-          </a>
+          
         </div>
       </MainSection>
     </>

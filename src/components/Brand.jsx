@@ -9,7 +9,7 @@ export const Brand = () => {
   return (
     <header className={styles.header}>
       <div className="relative flex">
-        <a href="https://mybabb.github.io/MyBABB-Remember/">
+       
           <div className={styles.iconContainer}>
             <img src={Notepad} alt="Notepad" width={192}/>
             <span className="absolute z-10    
@@ -17,11 +17,11 @@ export const Brand = () => {
               <PiRewindCircleLight    size={45} />
             </span>
           </div>
-        </a>
+       
       </div>
       <div className={styles.brandTitle}>
-        <h1 className="betaVersion font-LibreBaskerville-Bold text-red-400">
-          Beta-Version
+        <h1 className="privateVersion font-LibreBaskerville-Bold text-lime-400">
+          Private-Version
         </h1>
         <bold>Password Generator</bold>
       </div>
