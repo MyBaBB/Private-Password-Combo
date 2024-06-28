@@ -1,13 +1,12 @@
 {
-  "name": "password-machine",
+  "name": "private-password-machine",
   "private": true,
   "version": "0.0.0",
-  "homepage": "",
   "type": "module",
+  "homepage": "https://mybabb.github.io/Private-Password-Combo/",
   "scripts": {
-
-    "predeploy":  "npm run build",
-     
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "start":  "react-scripts start",
     "dev": "vite",
     "build": "vite build",
