@@ -9,7 +9,7 @@ import { IoFishOutline } from "react-icons/io5";
 import { CgCopy } from "react-icons/cg";
 import NightOcean from "../../assets/nightOcean400x200.jpg";
 import NightOcean240px from "../../assets/nightOcean240x190.jpg";
-import Copyright from "../CopyrightNotes";
+import Copyright from "./CopyrightNotes";
 
 export default function App() {
   const [todos, setTodos] = useState(() => {
