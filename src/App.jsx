@@ -3,15 +3,17 @@ import React from 'react'
 import About from './components/DaveRouter/About'
 import Home from './components/DaveRouter/Home'
 import Test from './components/DaveRouter/Test'
-const App = () => {
+ 
+function App() {
   return (
     <>
+     <div className='App'>
+      
+          <About />
+          <Home />
+          <Test />
      
-      <About />
-      <Home />
-      <Test />
-
-
+      </div>
       </>
   )
 }
