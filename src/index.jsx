@@ -1,13 +1,17 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
+import { createRoot } from 'react-dom'
 import './index.css'
 import App from './App'
-const index = () => {
-  return (
-    <div>
-      <App />
-    </div>
-  )
-}
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
-export default index
+
+createRoot(document.getElementById('root')).render(
+    <React.StrictMode>
+    <Router>
+        <Route path='/' component={App} />
+    </Router>
+    </React.StrictMode>
+);
+
+ 
