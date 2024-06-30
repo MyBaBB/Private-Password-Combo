@@ -3,18 +3,18 @@ import React from "react";
 
 import { useEffect, useState } from "react";
 import { generateMiduPass } from "./modules/generatePass";
-import { MainSection } from "./components/MainSection";
-import { Card } from "./components/Card";
-import { Brand } from "./components/Brand";
-import { PassField } from "./components/PassField";
-import { ToggleSwitch } from "./components//ToggleSwitch";
-import { PasswordQuality } from "./components/PasswordQuality";
-import { PassLengthLabel } from "./components/PassLengthLabel";
-import { Slider } from "./components/Slider";
-import { PrimaryButton } from "./components/PrimaryButton";
+import { MainSection } from "./MainSection";
+import { Card } from "./Card";
+import { Brand } from "./Brand";
+import { PassField } from "./PassField";
+import { ToggleSwitch } from "./ToggleSwitch";
+import { PasswordQuality } from "./PasswordQuality";
+import { PassLengthLabel } from "./PassLengthLabel";
+import { Slider } from "./Slider";
+import { PrimaryButton } from "./PrimaryButton";
 import { TbRefreshAlert } from "react-icons/tb";
-import { ToggleLabel } from "./components/ToggleLabel";
-import "../src/styles/brand.module.css";
+import { ToggleLabel } from "./ToggleLabel";
+import "./styles/brand.module.css";
 
 function App() {
   const [password, setPassword] = useState("");

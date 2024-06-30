@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-import styles from "../styles/passField.module.css";
-import { CopyButton } from "../components/CopyButton";
-import { CopiedTip } from "../components/CopiedTip";
+import styles from "./styles/passField.module.css";
+import { CopyButton } from "./CopyButton";
+import { CopiedTip } from "./CopiedTip";
 import { useState } from "react";
 
 export const PassField = ({ value, setValue }) => {

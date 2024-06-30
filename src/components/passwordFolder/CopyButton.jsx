@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 import { CgCopy } from "react-icons/cg";
-import styles from "../styles/copyButton.module.css";
+import styles from "./styles/copyButton.module.css";
 
 export const CopyButton = ({ handleClick, disabled }) => {
   return (

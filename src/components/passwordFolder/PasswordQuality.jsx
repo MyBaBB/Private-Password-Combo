@@ -1,5 +1,7 @@
+/* eslint-disable react/prop-types */
+// eslint-disable-next-line no-unused-vars
 import React, { useEffect, useRef } from "react";
-import styles from "../styles/passwordQuality.module.css";
+import styles from "./styles/passwordQuality.module.css";
 
 import { MdSecurity } from "react-icons/md";
 import { FaKey } from "react-icons/fa";

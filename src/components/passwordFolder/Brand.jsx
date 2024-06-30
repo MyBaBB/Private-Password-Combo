@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from "react";
 // import { TfiNotepad } from "react-icons/tfi";
-import styles from "../styles/brand.module.css";
+import styles from "./styles/brand.module.css";
 import { PiRewindCircleLight } from "react-icons/pi";
 import Notepad from '/notepad.png';
 import "./Brand.css";

@@ -1,4 +1,5 @@
-import styles from "../styles/toggleSwitch.module.css";
+/* eslint-disable react/prop-types */
+import styles from "./styles/toggleSwitch.module.css";
 
 export const ToggleSwitch = ({ active, handleClick, disabled }) => {
   return (

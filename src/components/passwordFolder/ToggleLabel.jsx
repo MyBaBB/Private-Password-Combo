@@ -1,4 +1,5 @@
-import styles from "../styles/toggleLabel.module.css";
+/* eslint-disable react/prop-types */
+import styles from "./styles/toggleLabel.module.css";
 
 export const ToggleLabel = ({ content, active }) => {
   return (

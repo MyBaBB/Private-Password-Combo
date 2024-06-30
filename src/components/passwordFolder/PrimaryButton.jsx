@@ -1,4 +1,5 @@
-import styles from "../styles/primaryButton.module.css";
+/* eslint-disable react/prop-types */
+import styles from "./styles/primaryButton.module.css";
 
 export const PrimaryButton = ({ children, handleClick, disabled }) => {
   return (

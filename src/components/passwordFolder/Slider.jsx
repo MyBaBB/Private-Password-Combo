@@ -1,5 +1,6 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useRef } from "react";
-import styles from "../styles/slider.module.css";
+import styles from "./styles/slider.module.css";
 
 export const Slider = ({ value = 0, handleChange, min = 0, max = 100 }) => {
   const fillRef = useRef();

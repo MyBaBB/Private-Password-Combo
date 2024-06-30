@@ -1,5 +1,5 @@
 import { RiShieldCheckFill } from "react-icons/ri";
-import styles from "../styles/copiedTip.module.css";
+import styles from "./styles/copiedTip.module.css";
 
 export const CopiedTip = () => {
   return (

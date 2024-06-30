@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
 import React from "react";
-import styles from "../styles/passLengthLabel.module.css";
+import styles from "./styles/passLengthLabel.module.css";
 
 export const PassLengthLabel = ({ length }) => {
   return (
