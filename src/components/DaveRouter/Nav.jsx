@@ -1,12 +1,12 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
 
-const Home = () => {
+const Nav = () => {
   return (
-    <main>
-      Home
-    </main>
+    <nav>
+      Nav
+    </nav>
   )
 }
-
-export default Home
+ 
+export default Nav
