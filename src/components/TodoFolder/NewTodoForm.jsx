@@ -20,26 +20,12 @@ export function NewTodoForm({ onSubmit }) {
 
   return (
     <>
-      <div className="relative   hidden justify-between xxs:flex">
-        <div className="inline-block ">
-          <a href="https://resume-hub.mybabb.com/" className="">
-            <div className="  relative   z-50 inline-block   w-fit   ">
-              <span className="rewindButton mt-2 inline-block text-black ">
-                {" "}
-                <FiRewind size={30} className="text-[#84bcfc]" />
-              </span>
-              &nbsp;&nbsp;
-              <span className="inline-block  ">
-                {" "}
-                <SiTestinglibrary size={30} />
-              </span>
-            </div>
-          </a>
-        </div>
+      <div className="relative   hidden justify-center xxs:flex">
+        
         <div className="passwordManager text-center ">
         <span
           className="passwordNotepad mt-2  whitespace-nowrap font-NovaCut-Regular text-[10px]
- xxs:block  xs:text-[24px]   "
+ xxs:block  xs:text-[24px] text-center  "
         >
         Password
         </span>
@@ -50,7 +36,7 @@ export function NewTodoForm({ onSubmit }) {
         Manager
         </span>
         </div>
-        <div className="inline-block  ">
+        <div className="absolute right-0  ">
           <a href="/password">
             <div className=" relative z-50    inline-block    ">
               <span className=" inline-block ">
