@@ -22,7 +22,7 @@ function App() {
       <Route path="/missing" element={<Missing />} /> */}
       <Route path="/password" element={<Password />} />
       <Route path="/todo" element={<MainWrapper />} />
-     
+      <Route path="/*" element={<Navigate to="/todo" />} />
       
     </Routes>
      
