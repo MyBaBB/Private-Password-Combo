@@ -68,7 +68,7 @@ export default defineConfig({
                 "sizes":"180x180","type":"image/png",
                 "purpose":"any maskable"
             }],
-              "theme_color":"#0d2657"
+              "theme_color":"#030103"
             }
     }),
   ],
