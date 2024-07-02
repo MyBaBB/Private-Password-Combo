@@ -3,7 +3,7 @@
 
 import MainWrapper from './components/TodoFolder/WholeTodo'; 
 import Password from './components/passwordFolder/PasswordApp';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 
 
  
@@ -20,9 +20,10 @@ function App() {
       <Route path="/nav" element={<Nav />} />
       <Route path="/header" element={<Header />} />
       <Route path="/missing" element={<Missing />} /> */}
+      <Route path="/" element={<MainWrapper />} />
       <Route path="/password" element={<Password />} />
       <Route path="/todo" element={<MainWrapper />} />
-      <Route path="/*" element={<Navigate to="/todo" />} />
+      <Route path="/*" element={< MainWrapper />} />
       
     </Routes>
      
