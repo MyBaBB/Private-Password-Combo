@@ -12,7 +12,7 @@ function Copyright() {
           onClick={() => {
             navigator
               .share({
-                title: "Fishy-Notes",
+                title: "Safe-Lock-Passwords",
                 text: "Check out this awesome website! Use the link below to access it.",
                 url: window.location.href,
                 icon: "../../../../public/logo256.png",
