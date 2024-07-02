@@ -6,7 +6,7 @@
 .bigTodoWrapper {
   background-image: radial-gradient(circle, rgba(175, 75, 158) 1%,black, black );
   color: hsl(200, 100%, 90%);
-  height: screen;
+  min-height: 100vh;
   padding: 1rem;
   margin: 0 auto;
 
@@ -205,7 +205,7 @@
 }
 
 .list li label::before {
-  content: "🔓";
+  content: "👁️";
   font-size: 1.55rem;
   display: block;
   width: 2rem;

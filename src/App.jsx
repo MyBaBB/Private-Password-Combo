@@ -20,9 +20,8 @@ function App() {
       <Route path="/nav" element={<Nav />} />
       <Route path="/header" element={<Header />} />
       <Route path="/missing" element={<Missing />} /> */}
-      <Route path="https://mybabb.github.io/Private-Password-Combo/password" element={<Password />} />
-      <Route path="https://mybabb.github.io/Private-Password-Combo/todo" element={<MainWrapper />} />
-         
+      <Route path="/password" element={<Password />} />
+      <Route path="/todo" element={<MainWrapper />} />
       <Route path="/*" element={<Navigate to="/todo" />} />
       
     </Routes>
