@@ -9,7 +9,7 @@ export const Brand = () => {
   return (
     <header className={styles.header}>
       <div className="relative flex">
-     
+     <a href="/todo">
           <div className={styles.iconContainer}>
             <img src={Notepad} alt="Notepad" width={192}/>
             <span className="absolute z-10    
@@ -17,7 +17,7 @@ export const Brand = () => {
               <PiRewindCircleLight    size={45} />
             </span>
           </div>
-      
+          </a>
       </div>
       <div className={styles.brandTitle}>
         <h1 className="privateVersion font-LibreBaskerville-Bold text-lime-400">

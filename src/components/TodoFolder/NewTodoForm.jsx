@@ -43,7 +43,7 @@ export function NewTodoForm({ onSubmit }) {
           Notepad
         </span>
         <div className="inline-block  ">
-          <a href="../../../index2.html">
+          <a href="/password">
             <div className=" relative z-50    inline-block    ">
               <span className=" inline-block text-blue-50">
                 <FaUserSecret size={27} />
