@@ -10,7 +10,7 @@ export default defineConfig({
     VitePWA({
       manifest: {
         "name":"Password-Generator",
-        "short_name":"Notes",
+        "short_name":"Safe-Lock",
         "start_url":"./",
         "display":"standalone",
         "background_color":"#2a61a1",
