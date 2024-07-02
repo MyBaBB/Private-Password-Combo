@@ -2,13 +2,12 @@ import { useEffect, useState } from "react";
 import { NewTodoForm } from "./NewTodoForm";
 import "./Todo.css";
 import { TodoList } from "./TodoList";
-import { AiOutlineCaretUp, AiOutlineCaretDown } from "react-icons/ai";
+ 
 import WebApp from "../MainWrapper/PWAFolder/WebApp";
-import { GiClick } from "react-icons/gi";
-import { IoFishOutline } from "react-icons/io5";
+ 
+ 
 import { CgCopy } from "react-icons/cg";
-import NightOcean from "../../assets/nightOcean400x200.jpg";
-import NightOcean240px from "../../assets/nightOcean240x190.jpg";
+ 
 import Copyright from "./CopyrightNotes";
 
 export default function App() {
@@ -46,27 +45,16 @@ export default function App() {
     });
   }
 
-  const [isOpen, setIsOpen] = useState(false);
+   
 
-  const [isTodoOrderReversed, setIsTodoOrderReversed] = useState(false);
+ 
 
-  function toggleTodoOrder() {
-    // Directly use prevValue to decide if the order should be reversed
-    const reversedTodos = !isTodoOrderReversed ? [...todos].reverse() : todos;
-    setTodos(reversedTodos);
-    setIsTodoOrderReversed(!isTodoOrderReversed); // Update the state based on the new value
-  }
-
+ 
   // switches input from top to bottom
-  const [addToTop, setAddToTop] = useState(true);
-  const [isAddToTopEnabled, setIsAddToTopEnabled] = useState(false);
+  const [addToTop] = useState(true);
+  
 
-  function toggleAddToTop() {
-    setAddToTop((prevValue) => !prevValue);
-  }
-  function toggleAddToTopEnabled() {
-    setIsAddToTopEnabled((prevValue) => !prevValue);
-  }
+ 
 
   const [isRandomEmojiEnabled, setIsRandomEmojiEnabled] = useState(true);
   function toggleRandomEmoji() {
@@ -75,26 +63,7 @@ export default function App() {
 
   function getRandomEmoji() {
     const emojis = [
-      "🐠",
-      "🦀",
-      "🦈",
-      "🐟",
-      "🎣",
-      "🪼",
-      "🐬",
-      "🐳",
-      "🦞",
-      "🦭",
-      "🐚",
-      "🪸",
-      "🦑",
-      "🐡",
-      "🐋",
-      "🐙",
-      "🦐",
-      "🐊",
-      "🐍",
-      "🐢",
+    "🔐"
     ];
     const randomIndex = Math.floor(Math.random() * emojis.length);
     return isRandomEmojiEnabled ? emojis[randomIndex] : "";
@@ -116,26 +85,14 @@ export default function App() {
     navigator.clipboard.writeText(todosText);
   }
 
-  // function copyAllTodosNormal2() {
-  //   let todosText = "";
-  //   todos.forEach((todo, index) => {
-  //     if (!todo.lockedTodo) {
-  //       const emoji = todo.lockedTodo ? "✅" : getRandomEmoji();
-  //       todosText +=
-  //         index + 1 + ". " + emoji + " " + todo.title + " " + "\n";
-  //     }
-  //   });
-  //   navigator.clipboard.writeText(todosText);
-  // }
+
 
   return (
     <>
     <div className="bigTodoWrapper">
       <div
         className="controlContainer relative m-auto w-[95%] max-w-[550px] flex-row rounded-3xl
-         border-2 border-black  p-4"
-        style={{ background: "radial-gradient(circle, #707070, #606060)" }}
-      >
+         border-2 border-black  p-4">
         <div className="relative flex-row ">
           <NewTodoForm onSubmit={addTodo} />
         </div>
@@ -153,25 +110,8 @@ export default function App() {
           relative z-[1] m-auto    mt-[-1.3rem] flex-col 
            items-center  rounded-lg px-[2rem]"
         >
-          <button
-            onClick={() => setIsOpen((prev) => !prev)}
-            className="btn3 relative  z-50 m-auto mt-4  flex w-[80%] items-center   
-            justify-between rounded-[5px]   
-           from-[#00bfff] to-blue-950 px-2 font-PTSerif-Bold
-          hover:bg-gradient-to-b "
-          >
-            &nbsp;&nbsp;Options
-            {isOpen ? (
-              <AiOutlineCaretUp size={20} color=" #a3e1f5 ;" />
-            ) : (
-              <AiOutlineCaretDown size={20} color=" #a3e1f5 ;" />
-            )}
-          </button>
-
-          <div
-            className={`bg-grey-800 relative z-50 flex w-full  origin-top flex-col rounded-lg p-1  
-               text-blue-200 ${isOpen ? "animate-open-menu" : "animate-close-menu"}`}
-          >
+          
+          
             <div className="subButtonWrapper  m-auto w-full ">
               <button
                 onClick={() => {
@@ -179,7 +119,7 @@ export default function App() {
 
                   const alertBox = document.createElement("div");
                   alertBox.textContent =
-                    "👉🏻 Entire List was Copied to ClipBoard ✍🏻";
+                    "🔐 All Unlocked Items Copied";
                   alertBox.classList.add(
                     "fixed",
                     "bottom-[25%]",
@@ -196,6 +136,7 @@ export default function App() {
                     "shadow-lg",
                     "z-50",
                     "font-PTSerif-Bold",
+                     "text-amber-50",
                   );
                   document.body.appendChild(alertBox);
                   setTimeout(() => {
@@ -210,116 +151,26 @@ export default function App() {
                   {" "}
                   <span className="font-PTSerif-Bold  ">Copy List</span>
                   <span className="text-9px absolute left-1/2 hidden translate-x-[0%] text-[9px]  text-blue-300 sm:block">
-                    (The Entire List)
+                    (Copy for Transfer)
                   </span>{" "}
                 </span>
                 <span className="inline-block">
                   <CgCopy />
                 </span>
               </button>
-
-              {/*3rd button */}
-
-              <div className="mb-1   w-full   ">
-                <button
-                  onClick={toggleRandomEmoji}
-                  className={`btn2 toggleButton relative m-auto flex    
-                    justify-between font-PTSerif-Bold      
-                  text-[9px] hover:bg-gradient-to-b xxs:text-[12px] xs:text-[15px]  ${
-                    isRandomEmojiEnabled
-                      ? "from-green-600 to-green-950"
-                      : "from-red-600 to-red-950"
-                  }`}
-                >
-                  {isRandomEmojiEnabled ? " Indicator On" : "Indicator Off "}
-                  <span className="text-9px absolute left-1/2 hidden translate-x-[-20%] text-[9px]  text-blue-300 sm:block">
-                    (Enables Fish Icons)
-                  </span>
-                  <span className="inline-block  ">
-                    <IoFishOutline size={20} />
-                  </span>
-                </button>
-              </div>
-
-              <button
-                onClick={() => {
-                  toggleAddToTopEnabled();
-                  toggleAddToTop();
-                }}
-                className={`btn2 toggleButton  relative m-auto  flex   
-                    justify-between font-PTSerif-Bold       
-                  hover:bg-gradient-to-b  ${isAddToTopEnabled ? "from-green-950 to-green-600" : "from-green-600 to-green-950"}`}
-              >
-                {isAddToTopEnabled ? (
-                  <div className="relative flex w-full justify-between ">
-                    <span className="font-PTSerif-Bold text-[9px] xxs:text-[12px] xs:text-[15px] ">
-                      Bottom Feeder
-                    </span>
-                    <span className="text-9px absolute left-1/2 hidden translate-x-[0%] text-[9px]  text-blue-300 sm:block">
-                      (Input at Bottom)
-                    </span>
-                    <span>
-                      <AiOutlineCaretDown size={20} />
-                    </span>
-                  </div>
-                ) : (
-                  <div className="relative flex w-full justify-between ">
-                    <span className="font-PTSerif-Bold text-[9px] xxs:text-[12px]  xs:text-[15px]">
-                      Top Feeder
-                    </span>
-                    <span className="text-9px absolute left-1/2 hidden translate-x-[0%] text-[9px]  text-blue-300 sm:block">
-                      (Input at Top)
-                    </span>
-                    <span>
-                      <AiOutlineCaretUp size={20} />
-                    </span>
-                  </div>
-                )}
-              </button>
-
-              <button
-                onClick={toggleTodoOrder}
-                className="btn2 copyButton relative     m-auto my-1  flex
-                from-green-600 to-green-950 text-[9px]  
-                 hover:bg-gradient-to-b xxs:text-[12px] xs:text-[15px]"
-              >
-                <span
-                  className="relative  flex w-full justify-between  font-PTSerif-Bold
-                  "
-                >
-                  <span className="text-9px absolute left-1/2 hidden translate-x-[0%] text-[9px]  text-blue-300 sm:block">
-                    (Chronological Order)
-                  </span>{" "}
-                  Flipper{" "}
-                </span>
-                <span className="inline-block "></span>
-                <GiClick size={20} />
-                &nbsp;2x
-              </button>
             </div>
+            
           </div>
-          <div className="absolute bottom-[0rem] left-[50%] z-[0] hidden w-full -translate-x-1/2   sm:block    ">
-            <img
-              src={NightOcean}
-              alt="Ocean at Night"
-              className="nightOcean relative  m-auto flex rounded-lg"
-            ></img>
-          </div>
-          <div className="absolute  bottom-[.5rem] left-[50%] z-[0] w-full -translate-x-1/2  xxs:bottom-[0rem] sm:hidden     ">
-            <img
-              src={NightOcean240px}
-              alt="Ocean at Night"
-              className="nightOcean240px relative m-auto flex rounded-lg"
-            ></img>
-          </div>
+          
+          <Copyright />
         </div>
-        <Copyright />
-      </div>
-
-      <div className=" mb-[-1rem] mt-[1rem]">
+       
+         <div className=" mb-[-1rem] mt-[1rem] mx-8">
         <WebApp />
       </div>
       </div>
+
+      
     </>
   );
 }

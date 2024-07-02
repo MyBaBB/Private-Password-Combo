@@ -26,30 +26,38 @@ export function NewTodoForm({ onSubmit }) {
             <div className="  relative   z-50 inline-block   w-fit   ">
               <span className="rewindButton mt-2 inline-block text-black ">
                 {" "}
-                <FiRewind size={30} className="" />
+                <FiRewind size={30} className="text-[#84bcfc]" />
               </span>
               &nbsp;&nbsp;
-              <span className="inline-block text-blue-50 ">
+              <span className="inline-block  ">
                 {" "}
                 <SiTestinglibrary size={30} />
               </span>
             </div>
           </a>
         </div>
+        <div className="passwordManager text-center ">
         <span
-          className="fishyNotepad mt-2  whitespace-nowrap font-Aclonica-Regular text-[14px]
- xxs:block  xs:text-[14px] sm:text-[19px] "
+          className="passwordNotepad mt-2  whitespace-nowrap font-NovaCut-Regular text-[10px]
+ xxs:block  xs:text-[24px]   "
         >
-          Notepad
+        Password
         </span>
+        <span
+          className="passwordNotepad    whitespace-nowrap font-NovaCut-Regular text-[10px]
+ xxs:block  xs:text-[24px]   "
+        >
+        Manager
+        </span>
+        </div>
         <div className="inline-block  ">
           <a href="/password">
             <div className=" relative z-50    inline-block    ">
-              <span className=" inline-block text-blue-50">
+              <span className=" inline-block ">
                 <FaUserSecret size={27} />
               </span>
               &nbsp;&nbsp;
-              <span className="fastForwardButton mt-2 inline-block text-black ">
+              <span className="fastForwardButton mt-2 inline-block text-[#84bcfc] ">
                 <FiFastForward size={30} />
               </span>
             </div>
@@ -75,8 +83,8 @@ export function NewTodoForm({ onSubmit }) {
           className="btn3 relative m-auto mb-8 flex justify-center  from-blue-700 to-blue-950  text-blue-50 
          hover:bg-gradient-to-b "
         >
-          <span className="font-PTSerif-Bold">Click to Add Item</span>
-        </button>
+          <span className="font-PTSerif-Bold">Add Secret</span>
+        </button> 
       </form>
     </>
   );

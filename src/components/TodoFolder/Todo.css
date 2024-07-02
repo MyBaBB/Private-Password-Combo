@@ -4,10 +4,10 @@
 }
 
 .bigTodoWrapper {
-  background-image: radial-gradient(circle, #205b78, #142537);
+  background-image: radial-gradient(circle, rgba(175, 75, 158) 1%,black, black );
   color: hsl(200, 100%, 90%);
   height: screen;
-  padding: 4rem;
+  padding: 1rem;
   margin: 0 auto;
 
   
@@ -17,8 +17,9 @@
 .controlContainer {
   box-shadow: 0px 0px 7px #0c0e08;
   max-width: 400px;
-  min-width: 250px;
-  
+  min-width: 200px;
+  background-color: rgb(45, 52, 63) ;
+  box-shadow: inset 0px 0px 22px 10px  rgba(0, 0, 0, 0.5);
 }
 
 .alertBox {
@@ -120,19 +121,13 @@
   font-size: larger;
   text-shadow: #0c0e08 1px 1px 1px;
 }
-.fishyNotepad {
-  text-shadow: 1px 1px 2px #000000;
-  color: deepskyblue;
+.passwordManager {
+  text-shadow: 1px 1px 2px #190b17;
+   
 }
 .flipperButton {
   text-shadow: 1px 1px 2px #000000;
   color: deepskyblue;
-}
-.flipperButton:hover {
-  color: lightskyblue;
-}
-.new-item-form input:focus {
-  border: 1px solid hsl(200, 100%, 70%);
 }
 
 .header {
@@ -210,7 +205,7 @@
 }
 
 .list li label::before {
-  content: "👁️ ";
+  content: "🔓";
   font-size: 1.55rem;
   display: block;
   width: 2rem;
@@ -239,13 +234,7 @@
 .list li:has(input:checked) label:hover::before {
   background: hsl(200, 100%, 30%);
 }
-.oldFart {
-  display: flex;
-  justify-content: center;
-  text-shadow: 2px 2px 4px #000000;
-  margin-bottom: 0.4rem;
-  box-shadow: 2px 2px 4px #000000;
-}
+
 .placeHolder1 {
   display: flex;
   justify-content: center;
@@ -255,12 +244,6 @@
   box-shadow: 2px 2px 4px #000000;
   background: rgba(0, 0, 0, 0.5);
   letter-spacing: 0.03cm;
-}
-.nightOcean {
-  box-shadow: 2px 2px 4px #000000;
-}
-.nightOcean240px {
-  box-shadow: 2px 2px 4px #000000;
 }
 
 .dataToolTip82:hover::before,
@@ -310,38 +293,4 @@
 
   --scale: 0;
   z-index: 49;
-}
-@keyframes open-menu {
-  0% {
-    transform: scaleY(0);
-    opacity: 0;
-  }
-  80% {
-    transform: scaleY(01.2);
-    opacity: 0.5;
-  }
-  100% {
-    transform: scaleY(1);
-    opacity: 1;
-  }
-}
-.animate-open-menu {
-  animation: open-menu 0.5s ease-in-out forwards;
-}
-@keyframes close-menu {
-  0% {
-    transform: scaleY(1);
-    opacity: 1;
-  }
-  40% {
-    transform: scaleY(0.8);
-    opacity: 0.5;
-  }
-  100% {
-    transform: scaleY(0);
-    opacity: 0;
-  }
-}
-.animate-close-menu {
-  animation: close-menu 0.6s ease-in-out forwards;
 }
