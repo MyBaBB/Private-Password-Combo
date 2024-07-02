@@ -40,7 +40,7 @@ function Copyright() {
       <div className=" w-fit">
         <a href="https://mybabb.com">
           <p className="relative -bottom-2 m-auto flex w-fit whitespace-nowrap font-Orbitron-Regular ">
-            <span className="z-1 text-[7px]  text-xs text-[#75bfc4] sm:text-[9px]">
+            <span className="z-1 text-[7px]    text-[#75bfc4] sm:text-[12px]">
               &lt;&lt;&lt;&nbsp;&copy;
               <span className="font-Aclonica-Regular text-orange-400">
                 &nbsp;MyBaBB

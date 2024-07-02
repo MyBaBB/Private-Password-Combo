@@ -20,36 +20,30 @@ export function NewTodoForm({ onSubmit }) {
 
   return (
     <>
-      <div className="relative   hidden justify-between xxs:flex">
-        <div className="inline-block ">
-          <a href="https://resume-hub.mybabb.com/" className="">
-            <div className="  relative   z-50 inline-block   w-fit   ">
-              <span className="rewindButton mt-2 inline-block text-black ">
-                {" "}
-                <FiRewind size={30} className="" />
-              </span>
-              &nbsp;&nbsp;
-              <span className="inline-block text-blue-50 ">
-                {" "}
-                <SiTestinglibrary size={30} />
-              </span>
-            </div>
-          </a>
-        </div>
+      <div className="relative   hidden justify-center xxs:flex">
+        
+        <div className="passwordManager text-center ">
         <span
-          className="fishyNotepad mt-2  whitespace-nowrap font-Aclonica-Regular text-[14px]
- xxs:block  xs:text-[14px] sm:text-[19px] "
+          className="passwordNotepad mt-2  whitespace-nowrap font-NovaCut-Regular text-[10px]
+ xxs:block  xs:text-[24px] text-center  "
         >
-          Notepad
+        Password
         </span>
-        <div className="inline-block  ">
+        <span
+          className="passwordNotepad    whitespace-nowrap font-NovaCut-Regular text-[10px]
+ xxs:block  xs:text-[24px]   "
+        >
+        Manager
+        </span>
+        </div>
+        <div className="absolute right-0  ">
           <a href="/password">
             <div className=" relative z-50    inline-block    ">
-              <span className=" inline-block text-blue-50">
+              <span className=" inline-block ">
                 <FaUserSecret size={27} />
               </span>
               &nbsp;&nbsp;
-              <span className="fastForwardButton mt-2 inline-block text-black ">
+              <span className="fastForwardButton mt-2 inline-block text-[#84bcfc] ">
                 <FiFastForward size={30} />
               </span>
             </div>
@@ -75,8 +69,8 @@ export function NewTodoForm({ onSubmit }) {
           className="btn3 relative m-auto mb-8 flex justify-center  from-blue-700 to-blue-950  text-blue-50 
          hover:bg-gradient-to-b "
         >
-          <span className="font-PTSerif-Bold">Click to Add Item</span>
-        </button>
+          <span className="font-PTSerif-Bold">Add Secret</span>
+        </button> 
       </form>
     </>
   );
