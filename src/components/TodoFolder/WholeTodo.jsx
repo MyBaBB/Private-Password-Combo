@@ -89,6 +89,7 @@ export default function App() {
 
   return (
     <>
+    <div className="bigTodoBackground">
     <div className="bigTodoWrapper">
       <div
         className="controlContainer relative m-auto w-[95%] max-w-[550px] flex-row rounded-3xl
@@ -167,6 +168,7 @@ export default function App() {
        
          <div className=" mb-[-1rem] mt-[1rem] mx-8">
         <WebApp />
+      </div>
       </div>
       </div>
 
