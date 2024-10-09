@@ -12,7 +12,7 @@ export default defineConfig({
         "name":"Password-Generator",
         "short_name":"Notes",
         "start_url":"./",
-        "display":"standalone",
+        "display":"fullscreen",
         "background_color":"#2a61a1",
         "lang":"en","scope":"./",
         "icons":[
