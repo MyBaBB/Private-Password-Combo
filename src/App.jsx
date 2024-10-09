@@ -3,7 +3,7 @@
 
 import MainWrapper from './components/TodoFolder/WholeTodo'; 
 import Password from './components/passwordFolder/PasswordApp';
-import { Routes, Route, Navigate, BrowserRouter } from 'react-router-dom';
+import { Routes, Route, Navigate  } from 'react-router-dom';
 
 
  

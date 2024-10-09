@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { NewTodoForm } from "./NewTodoForm";
 import "./Todo.css";
 import { TodoList } from "./TodoList";
- 
+import { IoFishOutline } from "react-icons/io5"
 import WebApp from "../MainWrapper/PWAFolder/WebApp";
  
  
@@ -63,7 +63,26 @@ export default function App() {
 
   function getRandomEmoji() {
     const emojis = [
-    "🔐"
+      "🐠",
+      "🦀",
+      "🦈",
+      "🐟",
+      "🎣",
+      "🪼",
+      "🐬",
+      "🐳",
+      "🦞",
+      "🦭",
+      "🐚",
+      "🪸",
+      "🦑",
+      "🐡",
+      "🐋",
+      "🐙",
+      "🦐",
+      "🐊",
+      "🐍",
+      "🐢",
     ];
     const randomIndex = Math.floor(Math.random() * emojis.length);
     return isRandomEmojiEnabled ? emojis[randomIndex] : "";
@@ -159,6 +178,27 @@ export default function App() {
                 </span>
               </button>
             </div>
+            <div className="mb-1   w-full   ">
+                  <button
+                    onClick={toggleRandomEmoji}
+                    className={`btn2 toggleButton relative m-auto flex    
+                    justify-between font-PTSerif-Bold      
+                  text-[9px] hover:bg-gradient-to-b xxs:text-[12px] xs:text-[15px]  ${
+                    isRandomEmojiEnabled
+                      ? "from-green-600 to-green-950"
+                      : "from-red-600 to-red-950"
+                  }`}
+                  >
+                    {isRandomEmojiEnabled ? " Indicator On" : "Indicator Off "}
+                    <span className="text-9px absolute left-1/2 hidden translate-x-[-20%] text-[9px]  text-blue-300 sm:block">
+                      (Enables Fish Icons)
+                    </span>
+                    <span className="inline-block  ">
+                      <IoFishOutline size={20} />
+                    </span>
+                  </button>
+                </div>
+
             
           </div>
           
