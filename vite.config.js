@@ -12,8 +12,8 @@ export default defineConfig({
         "name":"Password-Generator",
         "short_name":"Notes",
         "start_url":"./",
-        "display":"standalone",
-        "background_color":"#2a61a1",
+        "display":"fullscreen",
+        "background_color":"#371832",
         "lang":"en","scope":"./",
         "icons":[
           {
@@ -68,7 +68,7 @@ export default defineConfig({
                 "sizes":"180x180","type":"image/png",
                 "purpose":"any maskable"
             }],
-              "theme_color":"#0d2657"
+              "theme_color":"#371832"
             }
     }),
   ],

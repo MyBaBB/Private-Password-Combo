@@ -17,7 +17,7 @@ const InstallApp = () => {
       }
     }
   };
-  const isAppMode = window.matchMedia("(display-mode: standalone)").matches;
+  const isAppMode = window.matchMedia("(display-mode: fullscreen)").matches;
 
   return (
     <div className="relative m-auto -mt-4  flex  w-[65%] justify-between">
