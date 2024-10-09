@@ -3,6 +3,12 @@
 @import "tailwindcss/utilities";
 
 
+body {
+  margin: 0;
+  height: auto;
+  background-color: black;
+}
+
 @font-face {
   font-family: "Archivo_Black";
   src: url(../GoogleFonts/ArchivoBlack-Regular.ttf);
