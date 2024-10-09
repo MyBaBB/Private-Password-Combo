@@ -1,4 +1,4 @@
-<!--note to self push to github to deploy to github pages -->
+<!--use new combo router branch -->
 
 ## password machine
 
