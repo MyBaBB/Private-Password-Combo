@@ -1,4 +1,4 @@
-<!--use new combo router branch -->
+<!--Render.com uses the staging branch -->
 
 ## password machine
 
