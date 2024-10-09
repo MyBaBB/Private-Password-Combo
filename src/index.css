@@ -6,6 +6,7 @@
 body {
   margin: 0;
   height: auto;
+  background-color: black;
 }
 
 @font-face {
