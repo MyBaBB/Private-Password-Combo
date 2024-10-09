@@ -15,7 +15,6 @@ function App() {
     <Routes>
       <Route path="/password" element={<Password />} />
       <Route path="/todo" element={<MainWrapper />} />
-         
       <Route path="/*" element={<Navigate to="/todo" />} />
       
     </Routes>
