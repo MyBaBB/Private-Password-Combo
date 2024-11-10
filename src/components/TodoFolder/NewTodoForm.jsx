@@ -2,9 +2,9 @@
 import { useState } from "react";
 import { FiFastForward } from "react-icons/fi";
 import { FaUserSecret } from "react-icons/fa";
-import { SiTestinglibrary } from "react-icons/si";
+import { Link } from "react-router-dom";
 import "./Todo.css";
-import { FiRewind } from "react-icons/fi";
+ 
 
 export function NewTodoForm({ onSubmit }) {
   const [newItem, setNewItem] = useState("");
@@ -37,7 +37,7 @@ export function NewTodoForm({ onSubmit }) {
         </span>
         </div>
         <div className="absolute right-0  ">
-          <a href="/password">
+         <Link to="/password">
             <div className=" relative z-50    inline-block    ">
               <span className=" inline-block ">
                 <FaUserSecret size={27} />
@@ -47,7 +47,7 @@ export function NewTodoForm({ onSubmit }) {
                 <FiFastForward size={30} />
               </span>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
 

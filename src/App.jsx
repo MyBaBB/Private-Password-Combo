@@ -13,6 +13,7 @@ function App() {
   return (
    
     <Routes>
+      <Route path="/" element={<MainWrapper />} />
       <Route path="/password" element={<Password />} />
       <Route path="/todo" element={<MainWrapper />} />
       <Route path="/*" element={<Navigate to="/todo" />} />
